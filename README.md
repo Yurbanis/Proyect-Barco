@@ -1,4 +1,4 @@
-# :ship:Juego de Barcos:ship:
+# Juego de Barcos
 
 ### Instale el paquete npm y comience a codificar
 ```
