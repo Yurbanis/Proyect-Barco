@@ -3,51 +3,42 @@ import "../App.css";
 
 const Table = () => {
 	const [count, setCount] = useState(0);
-	const [color, setColor] = useState("red");
+	//const [color, setColor] = useState("red");
 
 	const increase = () => {
 		setCount(count + 1);
 		console.log(count + 1);
 	};
 
-	 const changeColor = () => {
-            setColor(color);
-        	console.log(color);
-        };
+	//  const changeColor = () => {
+    //         setColor(color);
+    //     	console.log(color);
+    //     };
 
-        let rows = 9;
-        let columns = 9;
-        let gameSize = 81;
+    //     let rows = 9;
+    //     let columns = 9;
+    //     let gameSize = 81;
 
 
-        let board = [
-        	[1, 1, 1, 1, 0, 0, 0, 0, 0],
-        	[0, 0, 0, 0, 0, 0, 0, 1, 1],
-        	[0, 0, 0, 0, 0, 0, 0, 0, 0],
-        	[0, 0, 0, 0, 0, 0, 1, 0, 0],
-        	[0, 0, 0, 0, 0, 0, 1, 0, 0],
-        	[0, 1, 0, 0, 0, 0, 1, 0, 0],
-        	[0, 1, 0, 0, 0, 0, 0, 0, 0],
-        	[0, 1, 0, 0, 0, 0, 0, 0, 0],
-        	[0, 0, 0, 1, 1, 1, 1, 1, 0],
-        	[0, 0, 0, 0, 0, 0, 0, 0, 0]
-        ];
+    //     let board = [
+    //     	[1, 1, 1, 1, 0, 0, 0, 0, 0],
+    //     	[0, 0, 0, 0, 0, 0, 0, 1, 1],
+    //     	[0, 0, 0, 0, 0, 0, 0, 0, 0],
+    //     	[0, 0, 0, 0, 0, 0, 1, 0, 0],
+    //     	[0, 0, 0, 0, 0, 0, 1, 0, 0],
+    //     	[0, 1, 0, 0, 0, 0, 1, 0, 0],
+    //     	[0, 1, 0, 0, 0, 0, 0, 0, 0],
+    //     	[0, 1, 0, 0, 0, 0, 0, 0, 0],
+    //     	[0, 0, 0, 1, 1, 1, 1, 1, 0],
+    //     	[0, 0, 0, 0, 0, 0, 0, 0, 0]
+    //     ];
 
-        if (board [x][y] == 0) {
-            "water" color
-        }
-
-        else if  (board [x][y] == 1) {
-             "fire" color
-         }
-
-        if (count == 17) {
-        	alert("Congratulatons you win");
+        if (count === 17) {
+        	alert("Felicitaciones, ganaste");
         } else if (count > 30) {
-        	alert("Sorry you lose, try again");
+        	alert("Lamento que hayas perdido, inténtalo de nuevo.");
          }
-        else if hit same place
-        alert("you shot in the same place")
+       
 
 	return (
 		<div className="container">
